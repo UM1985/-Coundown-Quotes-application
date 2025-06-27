@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Countdown Timer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Orbitron", sans-serif;
+        height: 100vh;
+        background: linear-gradient(to right, #1e3c72, #2a5298);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .countdown-container {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+      }
+
+      .countdown-title {
+        font-size: 2em;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+      }
+
+      .countdown {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .time-box {
+        font-size: 2em;
+        background: rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .label {
+        min-width: 80px;
+        font-size: 0.6em;
+        text-transform: uppercase;
+        margin-top: 5px;
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="countdown-container">
+      <div class="countdown-title">Countdown</div>
+      <div class="countdown" id="countdown">
+        <div class="time-box">
+          <div id="days">00</div>
+          <div class="label">Days</div>
+        </div>
+        <div class="time-box">
+          <div id="hours">00</div>
+          <div class="label">Hours</div>
+        </div>
+        <div class="time-box">
+          <div id="minutes">00</div>
+          <div class="label">Minutes</div>
+        </div>
+        <div class="time-box">
+          <div id="seconds">00</div>
+          <div class="label">Seconds</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
